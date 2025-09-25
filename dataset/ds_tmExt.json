@@ -1,0 +1,27 @@
+{
+	"name": "ds_tmExt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datasetext",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TitleCode",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "TitleDescription",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tmExt"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

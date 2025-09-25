@@ -1,0 +1,34 @@
+{
+	"name": "ds_am",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "payrolldataset",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "am.csv",
+				"folderPath": "dirpayrollfiles",
+				"fileSystem": "payrollsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "AgencyID",
+				"type": "String"
+			},
+			{
+				"name": "AgencyName",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

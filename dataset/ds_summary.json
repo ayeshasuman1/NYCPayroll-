@@ -1,0 +1,32 @@
+{
+	"name": "ds_summary",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datasetext",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "FiscalYear",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "AgencyName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TotalPaid",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "summary"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

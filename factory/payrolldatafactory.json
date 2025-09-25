@@ -1,0 +1,9 @@
+{
+	"name": "payrolldatafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "48f3f89b-8acf-40b3-87cc-39871b053e58",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}
